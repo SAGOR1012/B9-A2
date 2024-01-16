@@ -3,35 +3,129 @@
   font-family: "Mulish", sans-serif;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 /* shared item */
 
 /* Common style */
 :root {
   --main_color: #ff5400;
-  --main_font_weight: 800px;
   --description_color: #5a5a5d;
 }
 body {
-  padding: 135px;
+  padding: 20px 135px;
 }
 
 /* Nav section style */
 nav {
   display: flex;
   justify-content: space-between;
+  /* background-color: tomato; */
+  align-items: center;
 }
-.brand_name_and_logo_container {
+nav .brand_name_and_logo_container {
   display: flex;
   gap: 16px;
+  align-items: center;
+}
+nav .brand_name_and_logo_container h2 {
+  font-size: 36px;
+  font-weight: 800;
+}
+.brand_name_and_logo_container .brand_name {
+  color: var(--main_color);
 }
 nav .nav_list_container {
 }
-/* nav .nav_list_container{} */
+
 nav .nav_list_container ul {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  gap: 44px;
 }
 nav .nav_list_container ul li {
-  list-style: none;
 }
+nav .nav_list_container ul li a {
+  color: #424247;
+  font-size: 18px;
+  text-align: center;
+}
+/* Banner Section style */
+.banner_container {
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+  background-size: cover;
+  height: 500px;
+  width: auto;
+  border-radius: 16px;
+  margin-top: 50px;
+}
+.banner_container .banner_ditels {
+  text-align: center;
+  padding-top: 106px;
+}
+.banner_container .banner_ditels #banner_ditels {
+  text-align: center;
+  padding: 0 247px;
+}
+.banner_container .banner_ditels #banner_ditels h1 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 800;
+  text-align: center;
+}
+.banner_container .banner_ditels #banner_ditels .banner_description {
+  color: #fff;
+  text-align: center;
+  padding-top: 24px;
+  font-size: 16px;
+}
+.banner_container .banner_ditels .filter_box_container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 48px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 16px;
+  margin: 48px 185px;
+}
+.banner_container .banner_ditels .filter_box_container input,
+.drop_down_ooption {
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: #fff;
+  color: rgba(19, 19, 24, 0.5);
+  border: 0;
+  text-align: center;
+}
+.banner_container .banner_ditels .filter_box_container select {
+  text-align: center;
+  color: rgba(19, 19, 24, 0.5);
+  background: #fff;
+  font-size: 16px;
+  width: 174px;
+  height: 52px;
+  outline: none;
+  border-radius: 8px;
+}
+
+.banner_container .banner_ditels .filter_box_container .btn_search {
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  background: var(--main_color);
+  border: 0;
+  cursor: pointer;
+}
+/* Responsive style section */
