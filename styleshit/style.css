@@ -567,4 +567,8 @@ footer {
   .footer_container hr {
     margin: 0 auto;
   }
+  .footer_container .copyright {
+    padding: 10px 104px;
+    width: auto;
+  }
 }
