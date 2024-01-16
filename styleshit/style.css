@@ -71,6 +71,9 @@ nav .nav_list_container ul li a {
   font-size: 18px;
   text-align: center;
 }
+.bar_line {
+  display: none;
+}
 /* Banner Section style */
 .banner_container {
   background-image: linear-gradient(
@@ -435,9 +438,44 @@ footer {
   body {
     padding: 0 20px;
   }
+  /* Nav section */
+  nav .brand_name_and_logo_container {
+    margin-top: 40px;
+    gap: 12px;
+  }
+  nav .brand_name_and_logo_container h2 {
+    font-size: 25px;
+  }
+  nav .nav_list_container ul {
+    display: none;
+  }
+  .bar_line {
+    display: inline-block;
+  }
+  /* banner section */
+  .banner_container {
+    height: auto;
+    margin-top: 30px;
+  }
+  .banner_container .banner_ditels {
+    padding-top: 32px;
+  }
+  .banner_container .banner_ditels #banner_ditels {
+    padding: 0 66px;
+  }
+  .banner_container .banner_ditels #banner_ditels h1 {
+    font-size: 22px;
+  }
+  /* filter box section */
+  .banner_container .banner_ditels .filter_box_container {
+    flex-direction: column;
+    margin: 0 44px;
+    padding: 40px;
+  }
   /* main section */
   .popular_tour_container {
     flex-direction: column;
+    /* margin-top:px; */
   }
   .popular_tour_container .title_description_section .tour_title {
     font-size: 20px;
