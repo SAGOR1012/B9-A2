@@ -230,6 +230,29 @@ ul {
   font-size: 2rem;
   font-weight: 800;
 }
+/* Food section style  */
+.food_title {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 100px;
+  background: var(--main_color);
+  padding: 20px 0;
+  border-radius: 16px;
+}
+.food_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  padding-top: 50px;
+}
+.food_container img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
 /* Services section style  */
 .services_container {
 }
@@ -436,6 +459,10 @@ footer {
   .bandarban {
     grid-column: 1 / span 13;
     margin: 20px;
+  }
+  /* Food section */
+  .food_container {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   /* Services section */
