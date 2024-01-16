@@ -179,10 +179,62 @@ ul {
   width: auto;
   height: auto;
 }
+/* Destination section style  */
+.destination-place {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 300px);
+  gap: 10px;
+}
+
+.destination-place > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.maldives {
+  grid-column: 1 / span 6;
+}
+
+.indonesia {
+  grid-column: 7 / span 6;
+}
+
+.srilanka {
+  grid-column: 1 / span 3;
+}
+
+.north_america {
+  grid-column: 4 / span 6;
+}
+
+.Kashmir {
+  grid-column: 10 / span 3;
+}
+
+.bd {
+  grid-column: 1 / span 4;
+}
+
+.bandarban {
+  grid-column: 5 / span 8;
+}
+
+.destination-place > div > p {
+  text-align: center;
+  position: relative;
+  bottom: 57%;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+}
 /* Services section style  */
 .services_container {
 }
-.services_container .service_headig {
+.services_container .service_headig,
+.destination_headig {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -190,12 +242,14 @@ ul {
   align-items: center;
   padding: 100px 0;
 }
-.services_container .service_headig h2 {
+.services_container .service_headig h2,
+.destination_headig h2 {
   color: #131318;
   font-size: 42px;
   font-weight: 800;
 }
-.services_container .service_headig p {
+.services_container .service_headig p,
+.destination_headig p {
   text-align: center;
   color: var(--description_color);
   padding: 0 300px;
@@ -371,11 +425,26 @@ footer {
   .popular_tour_container img {
     max-width: 90vw;
   }
+  /* Destination section  */
+
+  .maldives,
+  .indonesia,
+  .srilanka,
+  .north_america,
+  .Kashmir,
+  .bd,
+  .bandarban {
+    grid-column: 1 / span 13;
+    margin: 20px;
+  }
+
   /* Services section */
-  .services_container .service_headig h2 {
+  .services_container .service_headig h2,
+  .destination_headig h2 {
     font-size: 20px;
   }
-  .services_container .service_headig p {
+  .services_container .service_headig p,
+  .destination_headig p {
     width: auto;
     height: auto;
     padding: 0 33px;
@@ -383,6 +452,7 @@ footer {
   /* Card services section */
   .service_card_container {
     flex-direction: column;
+    margin: 0 20px;
   }
   .heding {
     font-size: 20px;
