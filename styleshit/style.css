@@ -23,6 +23,14 @@
   border-radius: 8px;
   border: 0;
 }
+.heding {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+}
+.p_color {
+  color: var(--description_color);
+}
 
 body {
   padding: 20px 135px;
@@ -171,6 +179,57 @@ ul {
   width: auto;
   height: auto;
 }
+/* Services section style  */
+.services_container {
+}
+.services_container .service_headig {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+  padding: 100px 0;
+}
+.services_container .service_headig h2 {
+  color: #131318;
+  font-size: 42px;
+  font-weight: 800;
+}
+.services_container .service_headig p {
+  text-align: center;
+  color: var(--description_color);
+  padding: 0 300px;
+}
+/* Service card section style */
+.service_card_container {
+  display: flex;
+  gap: 24px;
+}
+.service_content {
+  width: 573px;
+  height: 284px;
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+  padding: 32px;
+}
+.service_card_container #World_class_service {
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+.service_card_container .service_content img,
+h3,
+p {
+  padding-bottom: 16px;
+}
+section #best_price {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* News letter section style */
 .news_letter_section {
   display: flex;
@@ -246,7 +305,7 @@ ul {
 footer {
   margin-top: 40px;
   width: auto;
-  height: 50vh;
+  height: 70vh;
   background: rgba(19, 19, 24, 0.05);
 }
 .footer_container .logo_brand_container {
@@ -311,6 +370,26 @@ footer {
   }
   .popular_tour_container img {
     max-width: 90vw;
+  }
+  /* Services section */
+  .services_container .service_headig h2 {
+    font-size: 20px;
+  }
+  .services_container .service_headig p {
+    width: auto;
+    height: auto;
+    padding: 0 33px;
+  }
+  /* Card services section */
+  .service_card_container {
+    flex-direction: column;
+  }
+  .heding {
+    font-size: 20px;
+  }
+  .service_content {
+    width: auto;
+    height: auto;
   }
   /* News letter section */
   .news_letter_section {
