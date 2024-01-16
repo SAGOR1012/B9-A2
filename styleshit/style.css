@@ -241,7 +241,60 @@ ul {
   font-size: 32px;
   font-weight: 800;
 }
-/* Responsive style section */
+
+/* Footer section style  */
+footer {
+  margin-top: 40px;
+  width: auto;
+  height: 50vh;
+  background: rgba(19, 19, 24, 0.05);
+}
+.footer_container .logo_brand_container {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid greenyellow; */
+  padding-top: 110px;
+}
+.footer_container .logo_brand_container h2 {
+  color: #131318;
+  font-size: 32px;
+  font-weight: 800;
+}
+.footer_container .logo_brand_container h2 > #brand_name {
+  color: #ff5400;
+}
+.footer_container .footer_description {
+  color: var(--description_color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 15px;
+  width: 769px;
+  padding: 15px 335px;
+}
+.footer_container .social_icon {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+.footer_container hr {
+  background: rgba(19, 19, 24, 0.1);
+  height: 1px;
+  width: 50%;
+  margin: 0 284px;
+}
+.footer_container .copyright {
+  color: var(--description_color);
+  padding: 100px 510px;
+  text-align: center;
+  /* border: 3px solid palevioletred; */
+  width: 200px;
+}
+/*.................................................... Responsive style section For mobile  */
 @media screen and (max-width: 600px) {
   body {
     padding: 0 20px;
@@ -283,5 +336,21 @@ ul {
   }
   .discount_bage h3 {
     font-size: 20px;
+  }
+  hr {
+    width: auto;
+  }
+  /* footer */
+  footer {
+    height: auto;
+    width: auto;
+  }
+  .footer_container .footer_description {
+    width: auto;
+    height: auto;
+    padding: 15px 44px;
+  }
+  .footer_container hr {
+    margin: 0 auto;
   }
 }
