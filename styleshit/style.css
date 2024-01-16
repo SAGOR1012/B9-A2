@@ -165,10 +165,81 @@ ul {
 }
 .popular_tour_container .title_description_section button {
   margin-top: 32px;
+  cursor: pointer;
 }
 .popular_tour_container img {
   width: auto;
   height: auto;
+}
+/* News letter section style */
+.news_letter_section {
+  display: flex;
+  margin-top: 100px;
+  gap: 24px;
+  justify-content: space-between;
+  border-radius: 16px;
+  /* border: 2px solid red; */
+  /* padding: 20px; */
+}
+.news_letter_section .news_letter_container {
+  border: 1px solid var(--main_color);
+  border-radius: 16px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.news_letter_section .news_letter_container .news_title {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+  padding-bottom: 16px;
+}
+.news_letter_section .news_letter_container .news_description {
+  color: var(--description_color);
+  font-size: 16px;
+  padding-bottom: 24px;
+}
+.news_letter_section .news_letter_container input {
+  width: 393px;
+  height: 52px;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  outline: none;
+  border: 0;
+  margin-top: 24px;
+  text-align: center;
+}
+.news_letter_section .news_letter_container input[type="submit"] {
+  background: var(--main_color);
+  cursor: pointer;
+}
+.news_letter_section img {
+  height: auto;
+  width: 50%;
+  /* height: 400px;
+  width: 200px; */
+}
+/* Discount badge section style  */
+.discount_bage {
+  width: 280px;
+  height: auto;
+  transform: rotate(-19.628deg);
+  background: var(--main_color);
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  padding: 20px 35px;
+  position: relative;
+  left: 70%;
+  top: -35vh;
+  cursor: pointer;
+}
+.discount_bage p {
+  font-size: 24px;
+}
+.discount_bage h3 {
+  font-size: 32px;
+  font-weight: 800;
 }
 /* Responsive style section */
 @media screen and (max-width: 600px) {
@@ -187,5 +258,30 @@ ul {
   }
   .popular_tour_container img {
     max-width: 90vw;
+  }
+  /* News letter section */
+  .news_letter_section {
+    flex-direction: column;
+  }
+  .news_letter_section .news_letter_container input {
+    width: auto;
+    /* height: auto; */
+  }
+  .news_letter_section img {
+    width: 100%;
+  }
+  /* Discount badge section   */
+  .discount_bage {
+    width: 200.023px;
+    height: 87.268px;
+    transform: rotate(-19.628deg);
+    left: 38%;
+    top: -18vh;
+  }
+  .discount_bage p {
+    font-size: 15px;
+  }
+  .discount_bage h3 {
+    font-size: 20px;
   }
 }
